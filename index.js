@@ -3,6 +3,8 @@ const products = require("./products");
 const cors = require("cors");
 const _ = require("lodash");
 
+const PORT = process.env.PORT || 4000;
+
 const app = express();
 
 app.use(cors());
@@ -51,6 +53,6 @@ const findProduct = product_id => {
   return product || null;
 };
 
-app.listen(4000, () => {
-  console.log("Started listening on 4000");
+app.listen(PORT, () => {
+  console.log(`Started listening on ${PORT}`);
 });
