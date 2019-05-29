@@ -56,3 +56,5 @@ const findProduct = product_id => {
 app.listen(PORT, () => {
   console.log(`Started listening on ${PORT}`);
 });
+
+module.exports = app;
